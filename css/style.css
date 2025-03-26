@@ -2,7 +2,34 @@
     --color-primario-dark :#091E3F;
     --color-primario-light :#6AC6DE;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+body{
+  font-family: "Open Sans", sans-serif;
+  background-color: #FBFBFB;
+  color: #0f0f0f;
+}
+.header{
+  background-color: var(--color-primario-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo{
+  width: 30%;
+}
+.header__nav a{
+  color: #FBFBFB
+}
+img{
+  width: 100%;
+}
 /* Ejemplo de circulo */
 .circle {
     width: 100px;
