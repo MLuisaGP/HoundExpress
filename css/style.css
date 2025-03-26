@@ -1,0 +1,30 @@
+:root{
+    --color-primario-dark :#091E3F;
+    --color-primario-light :#6AC6DE;
+}
+
+/* Ejemplo de circulo */
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white; /* Fondo blanco para el círculo */
+    background: conic-gradient(
+      red 0deg 90deg,
+      blue 90deg 180deg,
+      green 180deg 270deg,
+      yellow 270deg 360deg
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .circle-white{
+    width: 80px;
+    height:80px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <picture class="header__logo">
+            <a href="index.html">
+                <img src="img/logos/logoAzulBlancoHE.png" alt="logo">
+            </a>
+        </picture>
+        <nav class="header__nav">
+            <a href="/">Inicio</a>
+            <a href="#">Estado General</a>
+            <a href="#">Registros de Guía</a>
+            <a href="#">Buscar Guias</a>
+            <a href="#">Historial de Guias</a>
+        </nav>
+    </header>
+    <main>
+        <article class="main__form">
+            <h1>Registrar Guía</h1>
+            <section class="container">
+                <form action="form">
+                    <div class="form__input">
+                        <label for="trakingId">Numero de Guia</label>
+                        <input type="text" placeholder="Ingresa el numero de Guia" name="trakingId" required>
+                    </div>
+                    <div class="form__input">
+                        <label for="shippingOrigin">Origen</label>
+                        <input type="text" placeholder="Ingrese el origen" name="shippingOrigin" required>
+                    </div>
+                    <div class="form__input">
+                        <label for="shippingDestination">Destino</label>
+                        <input type="text" placeholder="Ingrese el destino" name="shippingDestination" required>
+                    </div>
+                    <div class="form__input">
+                        <label for="consignee">Destinatario</label>
+                        <input type="text" placeholder="Ingrese el destinatario" name="consignee" required>
+                    </div>
+                    <div class="form__input">
+                        <label for="createDate">Fecha de Creación</label>
+                        <input type="date" name="createDate" required>
+                    </div>
+                    <div class="form__input">
+                        <label for="trakingStatus">Estado de guia</label>
+                        <select name="trakingStatus" id="trakingStatus" required>
+                            <option value="" select disabled>--Selecionar Status--</option>
+                            <option value="processing">En proceso</option>
+                            <option value="inTransit">En transito</option>
+                            <option value="delivered">Entregado</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </article>
+
+        <article class="main__stadistic">
+            <h2>Estado General</h2>
+            <section class="container">
+                <div class="circle">
+                    <div class="circle-white">
+                        200 <br> Totales
+                    </div>
+                </div>
+                <div class="circle-inf">
+                    <ul>
+                        <li><b>300</b> Guias Activas</li>
+                        <li><b>300</b> Guias en Proceso</li>
+                        <li><b>300</b> Guias en Transito</li>
+                        <li><b>300</b> Guias en Entregados</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+
+        <article class="main__guides">
+            <h2>Lista de Guias</h2>
+            <table class="guides__table">
+                <thead>
+                    <tr>
+                        <th>Numero Guia</th>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                        <th>Fecha Ultima Actualizacion</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>84394</td>
+                        <td>Hermosillo Sonora</td>
+                        <td>Ciudad Juarez Chihuahua</td>
+                        <td>2025-05-10</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Ver</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>84394</td>
+                        <td>Hermosillo Sonora</td>
+                        <td>Ciudad Juarez Chihuahua</td>
+                        <td>2025-05-10</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Ver</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>84394</td>
+                        <td>Hermosillo Sonora</td>
+                        <td>Ciudad Juarez Chihuahua</td>
+                        <td>2025-05-10</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Ver</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>84394</td>
+                        <td>Hermosillo Sonora</td>
+                        <td>Ciudad Juarez Chihuahua</td>
+                        <td>2025-05-10</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Ver</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>84394</td>
+                        <td>Hermosillo Sonora</td>
+                        <td>Ciudad Juarez Chihuahua</td>
+                        <td>2025-05-10</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Ver</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>84394</td>
+                        <td>Hermosillo Sonora</td>
+                        <td>Ciudad Juarez Chihuahua</td>
+                        <td>2025-05-10</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Ver</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </main>
+    <footer>
+        <section class="footer__rutas">
+            <picture class="footer-logo">
+                <a href="index.html">
+                    <img src="img/logos/logoAzulBlancoHE.png" alt="logo">
+                </a>
+            </picture>
+            <div class="footer-social">
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-discord"></i></a>
+            </div>
+            <nav class="header__nav">
+                <a href="/">Inicio</a>
+                <a href="#">Estado General</a>
+                <a href="#">Registros de Guía</a>
+                <a href="#">Buscar Guias</a>
+                <a href="#">Historial de Guias</a>
+            </nav>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p><b>Direccion:</b> Travessera Alberto 5A,San Reynoso Baja Málaga</p>
+                <p><b>Telefono:</b> +34 (948)-22-0127</p>
+                <p><b>Correo:</b> ulaureano@example.com</p>
+            </div>
+        </section>
+        <hr>
+        <section class="footer__inf">
+            <p>Copyright&copy; 2025 <a href="">MluisagalazP</a>. Todos los derechos reservados.</p>
+            <div>
+                <a href="">Politica de privacidad</a>
+                <a href=""> Aviso Legal</a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
