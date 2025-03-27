@@ -7,10 +7,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1,h2,h3{
+  text-align: center;
+}
+h1{
+  font-size: 1.8rem;
+}
+h2{
+  font-size: 1.5rem;
+}
+h3{
+  font-size: 1.2rem;
+}
 a{
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 600;
+}
+img{
+  width: 100%;
 }
 body{
   font-family: "Open Sans", sans-serif;
@@ -18,6 +33,7 @@ body{
   color: #0f0f0f;
   
 }
+/* HEADER */
 .header{
   background-color: var(--color-primario-dark);
   display: flex;
@@ -62,9 +78,69 @@ body{
   color: var(--color-primario-light);
 }
 
-img{
-  width: 100%;
+/* MAIN__FORM */
+.main__form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
 }
+.main__form .container{
+  padding: 2rem;
+  border: 5px Solid var(--color-primario-dark);
+  border-radius: 0.5rem;
+}
+.form{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+}
+.form :last-child{
+  grid-column: 2/3;
+}
+.form :first-child, :nth-child(2){
+  grid-column: 1/3;
+}
+.form__input{
+  display: flex;
+  flex-direction: column;
+}
+.form__input label{
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 10px;
+}
+input,select{
+  padding: 0.5rem 1rem;
+  border:none;
+  border-radius: 5px;
+  border:2px Solid var(--color-primario-dark);
+}
+
+select, option{
+  text-transform: uppercase;
+}
+
+input::placeholder{
+  color: #091e3f6b;
+}
+input[type="submit"]{
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+  background-color: var(--color-primario-dark);
+  color: #FBFBFB;
+  text-transform: uppercase;
+  transition: 300ms;
+}
+input[type="submit"]:hover{
+  background-color: var(--color-primario-light);
+  color: var(--color-primario-dark);
+  border: none;
+  font-weight: 700;
+}
+
 /* Ejemplo de circulo */
 .circle {
     width: 100px;

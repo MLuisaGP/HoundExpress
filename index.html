@@ -31,29 +31,29 @@
         <article class="main__form">
             <h1>Registrar Guía</h1>
             <section class="container">
-                <form action="form">
+                <form class="form">
                     <div class="form__input">
-                        <label for="trakingId">Numero de Guia</label>
+                        <label for="trakingId">Numero de Guia:</label>
                         <input type="text" placeholder="Ingresa el numero de Guia" name="trakingId" required>
                     </div>
                     <div class="form__input">
-                        <label for="shippingOrigin">Origen</label>
-                        <input type="text" placeholder="Ingrese el origen" name="shippingOrigin" required>
-                    </div>
-                    <div class="form__input">
-                        <label for="shippingDestination">Destino</label>
-                        <input type="text" placeholder="Ingrese el destino" name="shippingDestination" required>
-                    </div>
-                    <div class="form__input">
-                        <label for="consignee">Destinatario</label>
+                        <label for="consignee">Destinatario:</label>
                         <input type="text" placeholder="Ingrese el destinatario" name="consignee" required>
                     </div>
                     <div class="form__input">
-                        <label for="createDate">Fecha de Creación</label>
+                        <label for="shippingOrigin">Origen:</label>
+                        <input type="text" placeholder="Ingrese el origen" name="shippingOrigin" required>
+                    </div>
+                    <div class="form__input">
+                        <label for="shippingDestination">Destino:</label>
+                        <input type="text" placeholder="Ingrese el destino" name="shippingDestination" required>
+                    </div>
+                    <div class="form__input">
+                        <label for="createDate">Fecha de Creación:</label>
                         <input type="date" name="createDate" required>
                     </div>
                     <div class="form__input">
-                        <label for="trakingStatus">Estado de guia</label>
+                        <label for="trakingStatus">Estado de guia:</label>
                         <select name="trakingStatus" id="trakingStatus" required>
                             <option value="" select disabled>--Selecionar Status--</option>
                             <option value="processing">En proceso</option>
@@ -61,7 +61,9 @@
                             <option value="delivered">Entregado</option>
                         </select>
                     </div>
-                    <input type="submit" value="Enviar">
+                    <div class="form__input">
+                        <input type="submit" value="Enviar">
+                    </div>
                 </form>
             </section>
         </article>
